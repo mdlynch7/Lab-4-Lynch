@@ -7,7 +7,7 @@ sum_array:
 
 sum_loop:
     cmpl %esi, %ecx # compares i with counter (esi)
-    jge loop_end
+    jge loop_end # if it is greater than or equal to, go to loop_end
 
     # if not greater than or equal to
     addl (%rdi, %rcx, 4), %eax
